@@ -1,0 +1,25 @@
+
+Раздел Констант
+CsysfrBK(Str: size=1 
+) Off=0
+CsysfrPole(Str: size=1 	) Off=0
+CsysfrRou(Str: size=1 
+) Off=0
+CsysQueryEnd(Int=-1 ) Off=0
+CsysErrOk(Int=0 ) Off=0
+CsysErrERR(Int=-1000 ) Off=0
+Csystp0(Str: size=1 -) Off=0
+CsystpInt(Str: size=1 i) Off=0
+CsystpDec(Str: size=1 f) Off=0
+CsystpPointer(Str: size=1 p) Off=0
+CsystpObj(Str: size=1 o) Off=0
+CsystpStr(Str: size=1 s) Off=0
+CsystpList(Str: size=1 a) Off=0
+CsysfrCom(Str: size=1 =) Off=0
+CsysfrInd(Str: size=1 ,) Off=0
+CsysfrCol(Str: size=1 :) Off=0
+CsysfrDate(Str: size=1 .) Off=0
+
+
+
+---Раздел Меток--# 0

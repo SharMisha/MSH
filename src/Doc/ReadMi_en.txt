@@ -1,0 +1,3 @@
+Implement a high-level MSH language.
+This version can be used only in Linux OS x64.
+To install, unzip the zip file to any directory. The Doc catalog describes the complex.

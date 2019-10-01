@@ -1,0 +1,80 @@
+
+Раздел Данных
+     0 Str: size=13 Запрос=
+
+
+---Раздел Меток--# 0
+
+Раздел Команд
+     0            Marker  11      7
+     1             Registr  uA0     0
+     2             Registr  mIc     1
+     3             Kill  A
+     4            Marker  10      8
+     5             Registr  uA0     0
+     6             Registr  mIc     2
+     7             Registr  uI      0
+     8             Set   c     0
+     9            Marker  6      9
+    10             Registr  uIC  A
+    11             Registr  uI      0
+    12             Registr  uA0     0
+    13             Registr  mIc     1
+    14             Next   Is    42
+    15            Marker  11     10
+    16             Registr  uA0     0
+    17             Registr  mIc     2
+    18             Registr  uI      0
+    19             Registr  uA0     0
+    20             Registr  mIc     2
+    21             Get    0
+    22             Registr  mIc     1
+    23             +
+    24             Set         0
+    25            Marker  19     10
+    26             Registr  uAC  B
+    27             Registr  uA0     0
+    28             Registr  mIc     2
+    29             Get    0
+    30             Registr  uI      0
+    31             Registr  uA0     0
+    32             Registr  mIc     1
+    33             Get    0
+    34             Registr  mIC  =
+    35             _
+    36             DO    0x18      3
+    37             _
+    38             Registr  mIC  
+
+    39             _
+    40             Set         0
+    41             Next   N    15
+    42            Marker  12     13
+    43             File  WC  ST
+    44            Marker  10     15
+    45             Registr  uAC  B
+    46             Registr  mIc     1
+    47             Registr  uI      0
+    48             Set   m     0
+    49            Marker  12     16
+    50             File  WC  ST
+    51            Marker  11     17
+    52             Registr  uAC  B
+    53             Registr  uAC  A
+    54             Copy     
+    55            Marker  12     18
+    56             File  WC  ST
+    57            Marker  10     27
+    58             Registr  uAC  B
+    59             Registr  mIc     1
+    60             Registr  uI      0
+    61             Set   m     0
+    62            Marker  12     28
+    63             File  WC  SR
+    64            Marker  11     30
+    65             Registr  uAC  B
+    66             Registr  uAC  A
+    67             Copy     
+    68            Marker  12     31
+    69             File  WC  SR
+

@@ -1,0 +1,317 @@
+
+Раздел Данных
+     0 Str: size=9 byxDkList
+     1 Str: size=6 typeDk
+     2 Str: size=3 ^d1
+     3 Str: size=4 date
+     4 Str: size=4 type
+
+
+---Раздел Меток--# 0
+get        0
+set        296
+
+Раздел Команд
+     0 get       Marker  7      5
+     1             Registr  uAC  A
+     2             Registr  mIc     1
+     3             Get    0
+     4             Registr  mIC
+     5             ==
+     6             jmp  0      9
+     7            Marker  23      5
+     8             Return        0
+     9            Marker  6      7
+    10             Registr  uAC  A
+    11             Registr  mIc     2
+    12             Get    0
+    13             Registr  mIC
+    14             ==
+    15             jmp  0    171
+    16            Marker  11      9
+    17             Registr  uAC  B
+    18             Registr  mIc     1
+    19             Registr  uI      0
+    20             Registr  mIC  S
+    21             Registr  mIm     0
+    22             _
+    23             Registr  mIC  
+
+    24             _
+    25             Registr  mIC  <
+    26             _
+    27             Set         0
+    28            Marker  11     10
+    29             Registr  uA0     0
+    30             Registr  mIc     2
+    31             Registr  uI      0
+    32             Registr  uIC  %u
+    33             Registr  uAC  A
+    34             Registr  mIc     1
+    35             Get    0
+    36             Registr  mIC  Dt
+    37             Get    0
+    38             Set         0
+    39            Marker  25     10
+    40             Registr  uA0     0
+    41             Registr  mIc     3
+    42             Registr  uI      0
+    43             Registr  uA0     0
+    44             Registr  mIc     2
+    45             Get    0
+    46             Registr  uMi     0
+    47             p     0     0
+    48             Registr  mIC  .
+    49             Registr  mIc     1
+    50             Registr  mIc     2
+    51             DO    0x58     14
+    52             Set         0
+    53            Marker  57     10
+    54             Registr  uA0     0
+    55             Registr  mIc     4
+    56             Registr  uI      0
+    57             Registr  uA0     0
+    58             Registr  mIc     3
+    59             Get    0
+    60             Registr  mIC  .
+    61             _
+    62             Set         0
+    63            Marker  74     10
+    64             Registr  uA0     0
+    65             Registr  mIc     5
+    66             Registr  uI      0
+    67             Registr  uIC  %u
+    68             Registr  uAC  A
+    69             Registr  mIc     1
+    70             Get    0
+    71             Registr  mIm     1
+    72             Get    0
+    73             Set         0
+    74            Marker  7     13
+    75             Registr  uIm     2
+    76             Registr  uI      0
+    77             Registr  uA0     0
+    78             Registr  mIc     4
+    79             Next   Is   129
+    80            Marker  22     13
+    81             Registr  uA0     0
+    82             Registr  mIc     4
+    83             Get    0
+    84             Registr  uMi     0
+    85             p     0     0
+    86             Registr  mIC  .
+    87             Registr  mIc     1
+    88             Registr  mIc     2
+    89             DO    0x58     14
+    90             Registr  uA0     0
+    91             Registr  mIc     3
+    92             Get    0
+    93             ~=
+    94             jmp  1    129
+    95            Marker  8     14
+    96             Registr  uIm     2
+    97             Registr  uA0     0
+    98             Registr  mIc     4
+    99             Get    0
+   100             Registr  uA0     0
+   101             Registr  mIc     5
+   102             Get    0
+   103             Registr  uI      0
+   104             Next   I   128
+   105            Marker  13     15
+   106             Registr  uAC  B
+   107             Registr  mIc     1
+   108             Registr  uI      0
+   109             Registr  uAC  B
+   110             Registr  mIc     1
+   111             Get    0
+   112             DO    0x18      2
+   113             _
+   114             Registr  mIC  	
+   115             _
+   116             Registr  uA0     0
+   117             Registr  mIc     4
+   118             Get    0
+   119             _
+   120             Registr  mIC  	
+   121             _
+   122             DO    0x18      3
+   123             _
+   124             Registr  mIC  
+
+   125             _
+   126             Set         0
+   127             Next   N   105
+   128             Next   N    80
+   129            Marker  7     19
+   130             Registr  uAC  B
+   131             Registr  mIc     1
+   132             Get    0
+   133             Registr  uMi     0
+   134             p     0     0
+   135             Registr  uAC  B
+   136             Registr  mIc     1
+   137             Get    0
+   138             Registr  uMi     0
+   139             DO    0x48      3
+   140             DO    0x58      0
+   141             Registr  mIC  <
+   142             ==
+   143             jmp  0    155
+   144            Marker  12     20
+   145             Registr  uAC  B
+   146             Registr  mIc     1
+   147             Registr  uI      0
+   148             Registr  uAC  B
+   149             Registr  mIc     1
+   150             Get    0
+   151             Registr  mIC  >
+   152             _
+   153             Set         0
+   154             jmp  *    169
+   155            Marker  12     22
+   156             Registr  uAC  B
+   157             Registr  mIc     1
+   158             Get    0
+   159             Registr  uMi     0
+   160             p     0     0
+   161             Registr  uAC  B
+   162             Registr  mIc     1
+   163             Get    0
+   164             Registr  uMi     0
+   165             DO    0x48      3
+   166             Registr  mIc     1
+   167             Registr  mIC  >
+   168             DO    0x51      3
+   169            Marker  7     24
+   170             Return        0
+   171            Marker  10     26
+   172             Registr  uA0     0
+   173             Registr  mIc     1
+   174             Registr  uI      0
+   175             Registr  uAC  A
+   176             Registr  mIc     2
+   177             Get    0
+   178             Set         0
+   179            Marker  17     26
+   180             Registr  uA0     0
+   181             Registr  mIc     2
+   182             Registr  uI      0
+   183             Registr  uA0     0
+   184             Registr  mIc     1
+   185             Get    0
+   186             Registr  uMi     0
+   187             p     0     0
+   188             Registr  mIC  :
+   189             Registr  mIc     1
+   190             DO    0x58     30
+   191             Set         0
+   192            Marker  6     28
+   193             Registr  uA0     0
+   194             Registr  mIc     1
+   195             Get    0
+   196             Registr  mIC
+   197             ==
+   198             jmp  0    238
+   199            Marker  11     29
+   200             Registr  uAC  B
+   201             Registr  mIc     1
+   202             Registr  uI      0
+   203             Registr  mIC  S
+   204             Registr  mIm     0
+   205             _
+   206             Registr  mIC  ,
+   207             _
+   208             Registr  uA0     0
+   209             Registr  mIc     2
+   210             Get    0
+   211             _
+   212             Registr  mIC  
+
+   213             _
+   214             Registr  mIC  <
+   215             _
+   216             Registr  uIC  d1
+   217             Registr  uIC  %u
+   218             Registr  uAC  A
+   219             Registr  mIc     1
+   220             Get    0
+   221             Registr  mIC  Dt
+   222             Get    0
+   223             Registr  uIC  %u
+   224             Registr  uAC  A
+   225             Registr  mIc     1
+   226             Get    0
+   227             Registr  mIm     1
+   228             Get    0
+   229             Registr  uA0     0
+   230             Registr  mIc     2
+   231             Get    0
+   232             Get    0
+   233             _^
+   234             Registr  mIC  >
+   235             _
+   236             Set         0
+   237             jmp  *    294
+   238            Marker  11     32
+   239             Registr  uA0     0
+   240             Registr  mIc     3
+   241             Registr  uI      0
+   242             Registr  uIm     2
+   243             Registr  uIC  %u
+   244             Registr  uAC  A
+   245             Registr  mIc     1
+   246             Get    0
+   247             Registr  mIm     3
+   248             Get    0
+   249             Registr  uIC  %u
+   250             Registr  uAC  A
+   251             Registr  mIc     1
+   252             Get    0
+   253             Registr  mIm     4
+   254             Get    0
+   255             Registr  uA0     0
+   256             Registr  mIc     2
+   257             Get    0
+   258             Get    0
+   259             Set         0
+   260            Marker  11     33
+   261             Registr  uAC  B
+   262             Registr  mIc     1
+   263             Registr  uI      0
+   264             Registr  mIC  S
+   265             Registr  mIm     0
+   266             _
+   267             Registr  mIC  ,
+   268             _
+   269             Registr  uA0     0
+   270             Registr  mIc     2
+   271             Get    0
+   272             _
+   273             Registr  mIC  :
+   274             _
+   275             Registr  uA0     0
+   276             Registr  mIc     1
+   277             Get    0
+   278             _
+   279             Registr  mIC  
+
+   280             _
+   281             Registr  uA0     0
+   282             Registr  mIc     3
+   283             Get    0
+   284             Registr  uMi     0
+   285             p     0     0
+   286             Registr  mIC  	
+   287             Registr  uA0     0
+   288             Registr  mIc     1
+   289             Get    0
+   290             Registr  mIc     1
+   291             DO    0x58     14
+   292             _
+   293             Set         0
+   294            Marker  6     35
+   295             Return        0
+   296 set       Marker  6     37
+   297             Return        0
+

@@ -1,0 +1,14 @@
+
+Раздел Констант
+CnetbegArr(Str: size=1 <) Off=0
+CnetendArr(Str: size=1 >) Off=0
+CnetcomInit(Str: size=1 I) Off=0
+CnetcomValue(Str: size=1 V) Off=0
+CnetcomGet(Str: size=1 s) Off=0
+CnetcomSet(Str: size=1 S) Off=0
+CnetcomFocusSet(Str: size=1 F) Off=0
+CnetcomFocusGet(Str: size=1 f) Off=0
+
+
+
+---Раздел Меток--# 0

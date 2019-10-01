@@ -1,0 +1,39 @@
+MSH01001    //byxDkList
+    //Модуль примера byx. В нем заложена серверная специфика приложения.
+    //Обработка объекта byxDkList. Это список документов.
+    Constant sysCstnt,sysNetCnst;
+get:	Return?(A$1=='');
+    //Если нужна вся таблица
+    If?(A$2=='');
+     //в выходном буфере B$1 - формируется выходная строка
+     Set B$1=CnetcomSet_byxDkList_CsysfrRou_CnetbegArr;
+     Set $2=%u[A$1,Dt],$3=$2.%fieldGet(CsysfrDate,1,2),$4=$3_CsysfrDate,$5=%u[A$1,typeDk];
+     //В дереве ^d1[] хранятся документы приложения они созданы программой byxSrvDkData.
+     //Эту программу следует запустить перед использованием примера.
+     Next ^d1[],$4; Break?($4.%fieldGet(CsysfrDate,1,2) ~= $3);
+      Next ^d1[$4,$5];
+       Set B$1=B$1_%queryKey_CsysfrPole_$4_CsysfrPole_%queryData_CsysfrRou;
+       EndNext;
+      EndNext;
+     //завершающий символ
+     If?(B$1.%strGet(B$1.%size) == CnetbegArr); //если содержимое отсутствует
+      Set B$1=B$1_CnetendArr;
+     Else; //если данные есть то заменить последний символ, так как там разделитель полей
+      Set B$1.%strSet(B$1.%size,1)=CnetendArr;
+      EndIf;
+     Return;
+     EndIf;
+    Set $1=A$2,$2=$1.%fieldPop(CsysfrCol,1);
+    //Если нужна строка
+    If?($1=='');
+     Set B$1=CnetcomSet_byxDkList_CsysfrInd_$2_CsysfrRou_CnetbegArr_^d1[%u[A$1,Dt],%u[A$1,typeDk],$2]_CnetendArr;
+     //нужно поле
+    Else;
+     Set $3=^d1[%u[A$1,date],%u[A$1,type],$2];
+     Set B$1=CnetcomSet_byxDkList_CsysfrInd_$2_CsysfrCol_$1_CsysfrRou_($3.%fieldGet(CsysfrPole,$1,1));
+     EndIf;
+    Return;
+set:
+    Return;
+EndbyxDkList;
+

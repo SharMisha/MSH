@@ -1,0 +1,54 @@
+
+Раздел Констант
+CwinTypeWinMain(Int 0=1 , 1=0 ) Off=0
+CwinTypeWinNb(Int 0=2 , 1=0 ) Off=0
+CwinTypeWinLb(Int 0=3 , 1=0 ) Off=0
+CwinTypeWinBut(Int 0=4 , 1=0 ) Off=0
+CwinTypeWinBox(Int 0=5 , 1=0 ) Off=0
+CwinTypeWinBoxBut(Int 0=6 , 1=0 ) Off=0
+CwinTypeWinSc(Int 0=7 , 1=0 ) Off=0
+CwinTypeWinGrid(Int 0=8 , 1=0 ) Off=0
+CwinTypeWinTree(Int 0=9 , 1=0 ) Off=0
+CwinTypeWinListStore(Int 0=10 , 1=0 ) Off=0
+CwinTypeWinTreeStore(Int 0=11 , 1=0 ) Off=0
+CwinTypeWinImg(Int 0=12 , 1=0 ) Off=0
+CwinTypeWinCalendar(Int 0=13 , 1=0 ) Off=0
+CwinTypeAtrName(Int 0=1 , 1=0 ) Off=0
+CwinTypeAtrSize(Int 0=2 , 1=0 ) Off=0
+CwinTypeAtrNbTabIs(Int 0=3 , 1=0 ) Off=0
+CwinTypeAtrPos(Int 0=4 , 1=0 ) Off=0
+CwinTypeAtrhScPol(Int 0=5 , 1=0 ) Off=0
+CwinTypeAtrvScPol(Int 0=6 , 1=0 ) Off=0
+CwinTypeAtrBoxStyle(Int 0=7 , 1=0 ) Off=0
+CwinTypeAtrCell(Int 0=8 , 1=0 ) Off=0
+CwinTypeAtrSpacing(Int 0=9 , 1=0 ) Off=0
+CwinTypeAtrNbScroll(Int 0=10 , 1=0 ) Off=0
+CwinTypeAtrVisible(Int 0=11 , 1=0 ) Off=0
+CwinTypeAtrImg(Int 0=12 , 1=0 ) Off=0
+CwinTypeAtrModel(Int 0=13 , 1=0 ) Off=0
+CwinTypeAtrTitle(Int 0=14 , 1=0 ) Off=0
+CwinTypeAtrData(Int 0=15 , 1=0 ) Off=0
+CwinTypeAtrDataAdd(Int 0=16 , 1=0 ) Off=0
+CwinTypeAtrFocus(Int 0=17 , 1=0 ) Off=0
+CwinAtrTabAdd(Int 0=18 , 1=0 ) Off=0
+CwinTypeAtrOn(Int 0=19 , 1=0 ) Off=0
+CwinTypeAtrOnInit(Int 0=20 , 1=0 ) Off=0
+CwinAtrPosH(Int 0=0 , 1=0 ) Off=0
+CwinAtrPosV(Int 0=1 , 1=0 ) Off=0
+CwinBoxStart(Int 0=0 , 1=0 ) Off=0
+CwinBoxEnd(Int 0=1 , 1=0 ) Off=0
+CwinBoxCntr(Int 0=2 , 1=0 ) Off=0
+CwinBoxButSPREAD(Int 0=1 , 1=0 ) Off=0
+CwinBoxButEDGE(Int 0=2 , 1=0 ) Off=0
+CwinBoxButSTART(Int 0=3 , 1=0 ) Off=0
+CwinBoxButEND(Int 0=4 , 1=0 ) Off=0
+CwinBoxButCENTER(Int 0=5 , 1=0 ) Off=0
+CwinBoxButEXPAND(Int 0=6 , 1=0 ) Off=0
+CwinPosLeft(Int 0=0 , 1=0 ) Off=0
+CwinPosRight(Int 0=1 , 1=0 ) Off=0
+CwinPosTop(Int 0=2 , 1=0 ) Off=0
+CwinPosBottom(Int 0=3 , 1=0 ) Off=0
+
+
+
+---Раздел Меток--# 0

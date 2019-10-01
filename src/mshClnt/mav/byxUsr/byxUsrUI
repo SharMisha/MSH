@@ -1,0 +1,865 @@
+
+Раздел Данных
+     0 Str: size=10 byxPar.ini
+     1 Str: size=11 byxData.ini
+     2 Str: size=10 byxCfg.ini
+     3 Str: size=5 width
+     4 Str: size=6 height
+     5 Str: size=6 onInit
+     6 Str: size=8 byxUsrUI
+     7 Str: size=3 0bx
+     8 Str: size=4 00bx
+     9 Str: size=6 000img
+    10 Str: size=11 misha25.png
+    11 Str: size=6 kodOrg
+    12 Str: size=7 nameOrg
+    13 Str: size=6 Primer
+    14 Str: size=5 kodRm
+    15 Str: size=6 nameRm
+    16 Str: size=9 Byxgalter
+    17 Str: size=4 01bx
+    18 Str: size=3 0dk
+    19 Str: size=3 Doc
+    20 Str: size=10 mn_GL0.PNG
+    21 Str: size=4 onDk
+    22 Str: size=3 0wf
+    23 Str: size=10 mn_GL1.PNG
+    24 Str: size=4 onWf
+    25 Str: size=3 0kl
+    26 Str: size=10 mn_GL2.PNG
+    27 Str: size=4 onKl
+    28 Str: size=3 0dt
+    29 Str: size=8 Calendar
+    30 Str: size=4 onDt
+    31 Str: size=3 0pr
+    32 Str: size=4 Prop
+    33 Str: size=10 mn_GL3.PNG
+    34 Str: size=4 onPr
+    35 Str: size=4 0err
+    36 Str: size=3 Err
+    37 Str: size=4 03nb
+    38 Str: size=6 030box
+    39 Str: size=8 Document
+    40 Str: size=8 0300boxB
+    41 Str: size=9 dkSelList
+    42 Str: size=3 Sel
+    43 Str: size=17 drImLs/DkLeft.bmp
+    44 Str: size=11 ondkSelList
+    45 Str: size=7 dkVidio
+    46 Str: size=5 Video
+    47 Str: size=16 drImLs/Vidio.bmp
+    48 Str: size=7 onVidio
+    49 Str: size=5 byxDk
+    50 Str: size=6 031box
+    51 Str: size=5 Forms
+    52 Str: size=8 0310boxB
+    53 Str: size=6 2wfSel
+    54 Str: size=7 onwfSel
+    55 Str: size=5 byxWf
+    56 Str: size=6 032box
+    57 Str: size=5 Klass
+    58 Str: size=8 0320boxB
+    59 Str: size=6 3klSel
+    60 Str: size=7 onklSel
+    61 Str: size=5 byxKl
+    62 Str: size=7 onDtSel
+    63 Str: size=6 033box
+    64 Str: size=8 0330boxB
+    65 Str: size=5 dkSel
+    66 Str: size=14 drImLs/DkL.bmp
+    67 Str: size=5 dkNew
+    68 Str: size=3 New
+    69 Str: size=14 drImLs/Dk0.bmp
+    70 Str: size=6 typeDk
+    71 Str: size=10 nametypeDk
+    72 Str: size=9 byxDkList
+    73 Str: size=12 byxHeder.ini
+    74 Str: size=11 byxMenu.ini
+    75 Str: size=3 Srv
+    76 Str: size=5 kodLg
+    77 Str: size=3 dkL
+    78 Str: size=12 byxSrvDkList
+
+
+---Раздел Меток--# 0
+onInit     511
+onDk       556
+onWf       564
+onKl       572
+onDt       580
+onDtSel    605
+onPr       645
+ondkSelList  653
+onVidio    759
+onwfSel    761
+onklSel    763
+
+Раздел Команд
+     0            Marker  8      5
+     1             Registr  uIC  %p
+     2             Registr  mIc     1
+     3             Kill  A
+     4            Marker  9      7
+     5             Registr  uIC  %p
+     6             Registr  mIc     1
+     7             Get    0
+     8             p     0     0
+     9             Registr  uMi     0
+    10             Registr  mIm     0
+    11             Registr  mIm     1
+    12             Registr  mIm     2
+    13             DO    0x54     31
+    14            Marker  9      9
+    15             Registr  uM      0
+    16             DO    0x30      0
+    17            Marker  9     11
+    18             Registr  uM      0
+    19             Registr  mIc     1
+    20             Registr  mIC  mn
+    21             DO    0x30      2
+    22            Marker  8     13
+    23             Registr  uA0     0
+    24             Registr  mIc     1
+    25             Registr  uI      0
+    26             Registr  uIC  %p
+    27             Registr  mIc     1
+    28             Registr  mIm     3
+    29             Get    0
+    30             Set         0
+    31            Marker  23     13
+    32             Registr  uA0     0
+    33             Registr  mIc     1
+    34             Get    0
+    35             Registr  uMi     0
+    36             p     0     0
+    37             Registr  mIc     1
+    38             Registr  uIC  %p
+    39             Registr  mIc     1
+    40             Registr  mIm     4
+    41             Get    0
+    42             DO    0x51     20
+    43            Marker  6     14
+    44             Registr  uA0     0
+    45             Registr  mIc     1
+    46             Get    0
+    47             Registr  mIc     1
+    48             <
+    49             jmp  0     55
+    50            Marker  13     14
+    51             Registr  uA0     0
+    52             Registr  mIc     1
+    53             Registr  uI      0
+    54             Set   c   800
+    55            Marker  21     14
+    56             Registr  uA0     0
+    57             Registr  mIc     1
+    58             Get    0
+    59             Registr  uMi     0
+    60             p     0     0
+    61             Registr  mIc     1
+    62             DO    0x58     20
+    63             Registr  mIc     1
+    64             <
+    65             jmp  0     75
+    66            Marker  36     14
+    67             Registr  uA0     0
+    68             Registr  mIc     1
+    69             Get    0
+    70             Registr  uMi     0
+    71             p     0     0
+    72             Registr  mIc     1
+    73             Registr  mIc   900
+    74             DO    0x51     20
+    75            Marker  10     15
+    76             Registr  uM      0
+    77             Registr  mIc     2
+    78             Registr  mIC  mn
+    79             Registr  uA0     0
+    80             Registr  mIc     1
+    81             Get    0
+    82             DO    0x31      3
+    83            Marker  9     17
+    84             Registr  uM      0
+    85             Registr  mIc    20
+    86             Registr  mIC  mn
+    87             Registr  mIm     5
+    88             Registr  mIm     6
+    89             DO    0x30      3
+    90            Marker  10     19
+    91             Registr  uM      0
+    92             Registr  mIc     5
+    93             Registr  mIm     7
+    94             Registr  mIC  mn
+    95             Registr  mIc     1
+    96             Registr  mIc     0
+    97             Registr  mIc     4
+    98             DO    0x30      2
+    99            Marker  11     21
+   100             Registr  uM      0
+   101             Registr  mIc     5
+   102             Registr  mIm     8
+   103             Registr  mIm     7
+   104             Registr  mIc     0
+   105             Registr  mIc     0
+   106             Registr  mIc     4
+   107             DO    0x30      2
+   108            Marker  12     23
+   109             Registr  uM      0
+   110             Registr  mIc    12
+   111             Registr  mIm     9
+   112             Registr  mIm     8
+   113             Registr  mIm    10
+   114             DO    0x30      2
+   115            Marker  12     25
+   116             Registr  uM      0
+   117             Registr  mIc     3
+   118             Registr  mIm    11
+   119             Registr  mIm     8
+   120             Registr  mIc     0
+   121             DO    0x30      2
+   122            Marker  12     27
+   123             Registr  uM      0
+   124             Registr  mIc     3
+   125             Registr  mIm    12
+   126             Registr  mIm     8
+   127             Registr  mIm    13
+   128             DO    0x30      2
+   129            Marker  12     29
+   130             Registr  uM      0
+   131             Registr  mIc     3
+   132             Registr  mIm    14
+   133             Registr  mIm     8
+   134             Registr  mIC  00
+   135             DO    0x30      2
+   136            Marker  12     31
+   137             Registr  uM      0
+   138             Registr  mIc     3
+   139             Registr  mIm    15
+   140             Registr  mIm     8
+   141             Registr  mIm    16
+   142             DO    0x30      2
+   143            Marker  11     33
+   144             Registr  uM      0
+   145             Registr  mIc     6
+   146             Registr  mIm    17
+   147             Registr  mIm     7
+   148             Registr  mIc     0
+   149             Registr  mIc     6
+   150             DO    0x30      2
+   151            Marker  12     35
+   152             Registr  uM      0
+   153             Registr  mIc     4
+   154             Registr  mIm    18
+   155             Registr  mIm    17
+   156             Registr  mIm    19
+   157             Registr  mIm    20
+   158             Registr  mIc     1
+   159             DO    0x30      2
+   160            Marker  12     37
+   161             Registr  uM      0
+   162             Registr  mIc    19
+   163             Registr  mIm    18
+   164             Registr  mIm    21
+   165             Registr  mIm     6
+   166             DO    0x30      3
+   167            Marker  12     39
+   168             Registr  uM      0
+   169             Registr  mIc     4
+   170             Registr  mIm    22
+   171             Registr  mIm    17
+   172             Registr  mIC  Wf
+   173             Registr  mIm    23
+   174             Registr  mIc     1
+   175             DO    0x30      2
+   176            Marker  12     41
+   177             Registr  uM      0
+   178             Registr  mIc    19
+   179             Registr  mIm    22
+   180             Registr  mIm    24
+   181             Registr  mIm     6
+   182             DO    0x30      3
+   183            Marker  12     43
+   184             Registr  uM      0
+   185             Registr  mIc     4
+   186             Registr  mIm    25
+   187             Registr  mIm    17
+   188             Registr  mIC  KL
+   189             Registr  mIm    26
+   190             Registr  mIc     1
+   191             DO    0x30      2
+   192            Marker  12     45
+   193             Registr  uM      0
+   194             Registr  mIc    19
+   195             Registr  mIm    25
+   196             Registr  mIm    27
+   197             Registr  mIm     6
+   198             DO    0x30      3
+   199            Marker  12     47
+   200             Registr  uM      0
+   201             Registr  mIc     4
+   202             Registr  mIm    28
+   203             Registr  mIm    17
+   204             Registr  mIm    29
+   205             DO    0x30      2
+   206            Marker  12     49
+   207             Registr  uM      0
+   208             Registr  mIc    19
+   209             Registr  mIm    28
+   210             Registr  mIm    30
+   211             Registr  mIm     6
+   212             DO    0x30      3
+   213            Marker  12     51
+   214             Registr  uM      0
+   215             Registr  mIc     4
+   216             Registr  mIm    31
+   217             Registr  mIm    17
+   218             Registr  mIm    32
+   219             Registr  mIm    33
+   220             Registr  mIc     1
+   221             DO    0x30      2
+   222            Marker  12     53
+   223             Registr  uM      0
+   224             Registr  mIc    19
+   225             Registr  mIm    31
+   226             Registr  mIm    34
+   227             Registr  mIm     6
+   228             DO    0x30      3
+   229            Marker  11     55
+   230             Registr  uM      0
+   231             Registr  mIc     3
+   232             Registr  mIm    35
+   233             Registr  mIm     7
+   234             Registr  mIm    36
+   235             DO    0x30      2
+   236            Marker  11     57
+   237             Registr  uM      0
+   238             Registr  mIc     2
+   239             Registr  mIm    37
+   240             Registr  mIm     7
+   241             Registr  mIc     2
+   242             Registr  mIc     0
+   243             DO    0x30      2
+   244            Marker  12     60
+   245             Registr  uM      0
+   246             Registr  mIc     5
+   247             Registr  mIm    38
+   248             Registr  mIC
+   249             Registr  mIc     1
+   250             Registr  mIc     0
+   251             Registr  mIc     4
+   252             DO    0x30      2
+   253            Marker  12     62
+   254             Registr  uM      0
+   255             Registr  mIc    18
+   256             Registr  mIm    38
+   257             Registr  mIm    37
+   258             Registr  mIm    39
+   259             DO    0x30      3
+   260            Marker  13     64
+   261             Registr  uM      0
+   262             Registr  mIc     6
+   263             Registr  mIm    40
+   264             Registr  mIm    38
+   265             Registr  mIc     0
+   266             Registr  mIc     3
+   267             DO    0x30      2
+   268            Marker  14     66
+   269             Registr  uM      0
+   270             Registr  mIc     4
+   271             Registr  mIm    41
+   272             Registr  mIm    40
+   273             Registr  mIm    42
+   274             Registr  mIm    43
+   275             Registr  mIc     1
+   276             DO    0x30      2
+   277            Marker  14     68
+   278             Registr  uM      0
+   279             Registr  mIc    19
+   280             Registr  mIm    41
+   281             Registr  mIm    44
+   282             Registr  mIm     6
+   283             DO    0x30      3
+   284            Marker  14     70
+   285             Registr  uM      0
+   286             Registr  mIc     4
+   287             Registr  mIm    45
+   288             Registr  mIm    40
+   289             Registr  mIm    46
+   290             Registr  mIm    47
+   291             Registr  mIc     1
+   292             DO    0x30      2
+   293            Marker  14     72
+   294             Registr  uM      0
+   295             Registr  mIc    19
+   296             Registr  mIm    45
+   297             Registr  mIm    48
+   298             Registr  mIm     6
+   299             DO    0x30      3
+   300            Marker  13     74
+   301             Registr  uM      0
+   302             Registr  mIc     9
+   303             Registr  mIm    49
+   304             Registr  mIm    38
+   305             Registr  mIc     4
+   306             DO    0x30      2
+   307            Marker  12     77
+   308             Registr  uM      0
+   309             Registr  mIc     5
+   310             Registr  mIm    50
+   311             Registr  mIC
+   312             Registr  mIc     1
+   313             Registr  mIc     0
+   314             Registr  mIc     4
+   315             DO    0x30      2
+   316            Marker  12     78
+   317             Registr  uM      0
+   318             Registr  mIc    18
+   319             Registr  mIm    50
+   320             Registr  mIm    37
+   321             Registr  mIm    51
+   322             DO    0x30      3
+   323            Marker  13     80
+   324             Registr  uM      0
+   325             Registr  mIc     6
+   326             Registr  mIm    52
+   327             Registr  mIm    50
+   328             Registr  mIc     0
+   329             DO    0x30      2
+   330            Marker  14     82
+   331             Registr  uM      0
+   332             Registr  mIc     4
+   333             Registr  mIm    53
+   334             Registr  mIm    52
+   335             Registr  mIC
+   336             Registr  mIm    43
+   337             Registr  mIc     1
+   338             DO    0x30      2
+   339            Marker  14     84
+   340             Registr  uM      0
+   341             Registr  mIc    19
+   342             Registr  mIm    53
+   343             Registr  mIm    54
+   344             Registr  mIm     6
+   345             DO    0x30      3
+   346            Marker  13     86
+   347             Registr  uM      0
+   348             Registr  mIc     9
+   349             Registr  mIm    55
+   350             Registr  mIm    50
+   351             Registr  mIc     2
+   352             DO    0x30      2
+   353            Marker  12     89
+   354             Registr  uM      0
+   355             Registr  mIc     5
+   356             Registr  mIm    56
+   357             Registr  mIC
+   358             Registr  mIc     1
+   359             DO    0x30      2
+   360            Marker  12     90
+   361             Registr  uM      0
+   362             Registr  mIc    18
+   363             Registr  mIm    56
+   364             Registr  mIm    37
+   365             Registr  mIm    57
+   366             DO    0x30      3
+   367            Marker  13     92
+   368             Registr  uM      0
+   369             Registr  mIc     6
+   370             Registr  mIm    58
+   371             Registr  mIm    56
+   372             Registr  mIc     0
+   373             DO    0x30      2
+   374            Marker  14     94
+   375             Registr  uM      0
+   376             Registr  mIc     4
+   377             Registr  mIm    59
+   378             Registr  mIm    58
+   379             Registr  mIC
+   380             Registr  mIm    43
+   381             Registr  mIc     1
+   382             DO    0x30      2
+   383            Marker  14     95
+   384             Registr  uM      0
+   385             Registr  mIc    19
+   386             Registr  mIm    59
+   387             Registr  mIm    60
+   388             Registr  mIm     6
+   389             DO    0x30      3
+   390            Marker  13     97
+   391             Registr  uM      0
+   392             Registr  mIc     8
+   393             Registr  mIm    61
+   394             Registr  mIm    56
+   395             Registr  mIc     2
+   396             DO    0x30      2
+   397            Marker  12     99
+   398             Registr  uM      0
+   399             Registr  mIc    13
+   400             Registr  mIm    29
+   401             DO    0x30      2
+   402            Marker  12    100
+   403             Registr  uM      0
+   404             Registr  mIc    18
+   405             Registr  mIm    29
+   406             Registr  mIm    37
+   407             DO    0x30      3
+   408            Marker  12    101
+   409             Registr  uM      0
+   410             Registr  mIc    19
+   411             Registr  mIm    29
+   412             Registr  mIm    62
+   413             Registr  mIm     6
+   414             DO    0x30      3
+   415            Marker  12    104
+   416             Registr  uM      0
+   417             Registr  mIc     5
+   418             Registr  mIm    63
+   419             Registr  mIC
+   420             Registr  mIc     1
+   421             DO    0x30      2
+   422            Marker  12    106
+   423             Registr  uM      0
+   424             Registr  mIc    18
+   425             Registr  mIm    63
+   426             Registr  mIm    37
+   427             DO    0x30      3
+   428            Marker  13    108
+   429             Registr  uM      0
+   430             Registr  mIc     6
+   431             Registr  mIm    64
+   432             Registr  mIm    63
+   433             Registr  mIc     0
+   434             DO    0x30      2
+   435            Marker  14    110
+   436             Registr  uM      0
+   437             Registr  mIc     4
+   438             Registr  mIm    65
+   439             Registr  mIm    64
+   440             Registr  mIm    42
+   441             Registr  mIm    66
+   442             Registr  mIc     1
+   443             DO    0x30      2
+   444            Marker  14    111
+   445             Registr  uM      0
+   446             Registr  mIc    19
+   447             Registr  mIm    65
+   448             Registr  mIm    44
+   449             Registr  mIm     6
+   450             DO    0x30      3
+   451            Marker  14    113
+   452             Registr  uM      0
+   453             Registr  mIc     4
+   454             Registr  mIm    67
+   455             Registr  mIm    64
+   456             Registr  mIm    68
+   457             Registr  mIm    69
+   458             Registr  mIc     1
+   459             DO    0x30      2
+   460            Marker  14    114
+   461             Registr  uM      0
+   462             Registr  mIc    19
+   463             Registr  mIm    67
+   464             Registr  mIm    44
+   465             Registr  mIm     6
+   466             DO    0x30      3
+   467            Marker  14    116
+   468             Registr  uM      0
+   469             Registr  mIc     3
+   470             Registr  mIm    70
+   471             Registr  mIm    64
+   472             DO    0x30      2
+   473            Marker  14    118
+   474             Registr  uM      0
+   475             Registr  mIc     3
+   476             Registr  mIm    71
+   477             Registr  mIm    64
+   478             DO    0x30      2
+   479            Marker  13    120
+   480             Registr  uM      0
+   481             Registr  mIc     8
+   482             Registr  mIm    72
+   483             Registr  mIm    63
+   484             Registr  mIc     5
+   485             DO    0x30      2
+   486            Marker  9    123
+   487             Registr  uM      0
+   488             Registr  mIc    14
+   489             Registr  mIm    73
+   490             Registr  mIm     0
+   491             Registr  mIm     1
+   492             DO    0x30      5
+   493            Marker  9    125
+   494             Registr  uM      0
+   495             Registr  mIc    15
+   496             Registr  mIm    74
+   497             DO    0x30      5
+   498            Marker  9    127
+   499             Registr  uM      0
+   500             Registr  uIC  %p
+   501             Registr  mIc     1
+   502             Registr  mIm    75
+   503             Get    0
+   504             DO    0x30      7
+   505            Marker  9    128
+   506             Registr  uM      0
+   507             Registr  mIC  mn
+   508             DO    0x30      8
+   509            Marker  6    129
+   510             Return        0
+   511 onInit    Marker  10    137
+   512             Registr  uAC  B
+   513             Registr  mIc     1
+   514             Registr  uI      0
+   515             Registr  mIC  V
+   516             Registr  mIC  mn
+   517             _
+   518             Registr  mIC  
+
+   519             _
+   520             Registr  mIC  Or
+   521             _
+   522             Registr  mIC  =
+   523             _
+   524             Registr  uIC  %p
+   525             Registr  mIc     1
+   526             Registr  mIm    11
+   527             Get    0
+   528             _
+   529             Registr  mIC  	
+   530             _
+   531             Registr  mIC  Rm
+   532             _
+   533             Registr  mIC  =
+   534             _
+   535             Registr  uIC  %p
+   536             Registr  mIc     1
+   537             Registr  mIm    14
+   538             Get    0
+   539             _
+   540             Registr  mIC  	
+   541             _
+   542             Registr  mIC  Lg
+   543             _
+   544             Registr  mIC  =
+   545             _
+   546             Registr  uIC  %p
+   547             Registr  mIc     1
+   548             Registr  mIm    76
+   549             Get    0
+   550             _
+   551             Set         0
+   552            Marker  12    139
+   553             File  WC  SR
+   554            Marker  6    140
+   555             Return        0
+   556 onDk      Marker  9    143
+   557             Registr  uM      0
+   558             Registr  mIc    17
+   559             Registr  mIm    37
+   560             Registr  mIc     0
+   561             DO    0x30      3
+   562            Marker  6    144
+   563             Return        0
+   564 onWf      Marker  9    146
+   565             Registr  uM      0
+   566             Registr  mIc    17
+   567             Registr  mIm    37
+   568             Registr  mIc     1
+   569             DO    0x30      3
+   570            Marker  6    147
+   571             Return        0
+   572 onKl      Marker  9    149
+   573             Registr  uM      0
+   574             Registr  mIc    17
+   575             Registr  mIm    37
+   576             Registr  mIc     2
+   577             DO    0x30      3
+   578            Marker  6    150
+   579             Return        0
+   580 onDt      Marker  10    154
+   581             Registr  uA0     0
+   582             Registr  mIc     1
+   583             Registr  uI      0
+   584             Registr  uM      0
+   585             Registr  mIc    14
+   586             Registr  mIm    28
+   587             DO    0x38      4
+   588             Set         0
+   589            Marker  9    156
+   590             Registr  uM      0
+   591             Registr  mIc    15
+   592             Registr  mIm    29
+   593             Registr  uA0     0
+   594             Registr  mIc     1
+   595             Get    0
+   596             DO    0x30      3
+   597            Marker  9    158
+   598             Registr  uM      0
+   599             Registr  mIc    17
+   600             Registr  mIm    37
+   601             Registr  mIc     3
+   602             DO    0x30      3
+   603            Marker  6    159
+   604             Return        0
+   605 onDtSel   Marker  11    163
+   606             Registr  uI0     0
+   607             Registr  mIc     1
+   608             Kill  A
+   609            Marker  10    164
+   610             Registr  uA0     0
+   611             Registr  mIc     1
+   612             Registr  uI      0
+   613             Registr  uM      0
+   614             Registr  mIc    15
+   615             Registr  mIm    29
+   616             DO    0x38      4
+   617             Set         0
+   618            Marker  50    164
+   619             Registr  uI0     0
+   620             Registr  mIc     1
+   621             Registr  mIm    28
+   622             Registr  uI      0
+   623             Registr  uA0     0
+   624             Registr  mIc     1
+   625             Get    0
+   626             Set         0
+   627            Marker  9    166
+   628             Registr  uM      0
+   629             Registr  mIc    14
+   630             Registr  mIm    28
+   631             Registr  uA0     0
+   632             Registr  mIc     1
+   633             Get    0
+   634             DO    0x30      3
+   635            Marker  9    168
+   636             Registr  uI0     0
+   637             Registr  mIc     1
+   638             Get    0
+   639             p     0     0
+   640             Registr  uMi     0
+   641             Registr  mIm     1
+   642             DO    0x54     32
+   643            Marker  6    169
+   644             Return        0
+   645 onPr      Marker  9    172
+   646             Registr  uM      0
+   647             Registr  mIc    17
+   648             Registr  mIm    37
+   649             Registr  mIc     5
+   650             DO    0x30      3
+   651            Marker  6    173
+   652             Return        0
+   653 ondkSelList Marker  10    177
+   654             Registr  uA0     0
+   655             Registr  mIc     3
+   656             Registr  uI      0
+   657             Registr  uM      0
+   658             Registr  mIc    15
+   659             Registr  mIm    28
+   660             DO    0x38      4
+   661             Set         0
+   662            Marker  10    178
+   663             Registr  uA0     0
+   664             Registr  mIc     1
+   665             Registr  uI      0
+   666             Registr  uM      0
+   667             Registr  mIc    17
+   668             Registr  mIm    49
+   669             Registr  mIc     0
+   670             DO    0x38      4
+   671             Set         0
+   672            Marker  6    181
+   673             Registr  uA0     0
+   674             Registr  mIc     1
+   675             Get    0
+   676             Registr  uMi     0
+   677             DO    0x48      3
+   678             Registr  mIc     1
+   679             >
+   680             jmp  0    757
+   681            Marker  11    183
+   682             Registr  uA0     0
+   683             Registr  mIc     2
+   684             Registr  uI      0
+   685             Registr  uM      0
+   686             Registr  mIc    17
+   687             Registr  mIm    49
+   688             Registr  mIc     1
+   689             DO    0x38      4
+   690             Set         0
+   691            Marker  10    184
+   692             Registr  uM      0
+   693             Registr  mIc    15
+   694             Registr  mIm    70
+   695             Registr  uA0     0
+   696             Registr  mIc     1
+   697             Get    0
+   698             DO    0x30      3
+   699            Marker  10    185
+   700             Registr  uM      0
+   701             Registr  mIc    15
+   702             Registr  mIm    71
+   703             Registr  uA0     0
+   704             Registr  mIc     2
+   705             Get    0
+   706             DO    0x30      3
+   707            Marker  11    187
+   708             Registr  uAC  B
+   709             Registr  mIc     1
+   710             Registr  uI      0
+   711             Registr  mIC  V
+   712             Registr  mIm    77
+   713             _
+   714             Registr  mIC  
+
+   715             _
+   716             Registr  mIC  Dt
+   717             _
+   718             Registr  mIC  =
+   719             _
+   720             Registr  uA0     0
+   721             Registr  mIc     3
+   722             Get    0
+   723             _
+   724             Registr  mIC  	
+   725             _
+   726             Registr  mIm    70
+   727             _
+   728             Registr  mIC  =
+   729             _
+   730             Registr  uA0     0
+   731             Registr  mIc     1
+   732             Get    0
+   733             _
+   734             Set         0
+   735            Marker  13    188
+   736             File  WC  SR
+   737            Marker  11    190
+   738             Registr  uAC  B
+   739             Registr  mIc     1
+   740             Registr  uI      0
+   741             Registr  mIC  s
+   742             Registr  mIm    77
+   743             _
+   744             Registr  mIC  ,
+   745             _
+   746             Registr  mIm    78
+   747             _
+   748             Set         0
+   749            Marker  13    191
+   750             File  WC  SR
+   751            Marker  10    193
+   752             Registr  uM      0
+   753             Registr  mIc    17
+   754             Registr  mIm    37
+   755             Registr  mIc     4
+   756             DO    0x30      3
+   757            Marker  6    196
+   758             Return        0
+   759 onVidio   Marker  6    198
+   760             Return        0
+   761 onwfSel   Marker  6    200
+   762             Return        0
+   763 onklSel   Marker  6    202
+   764             Return        0
+

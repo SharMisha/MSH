@@ -1,0 +1,4 @@
+MSH01001
+ Const CnetbegArr='<',CnetendArr='>',CnetcomInit=I,CnetcomValue=V,CnetcomGet=s,CnetcomSet=S,CnetcomFocusSet=F,CnetcomFocusGet=f;
+ EndsysNetCnst;
+

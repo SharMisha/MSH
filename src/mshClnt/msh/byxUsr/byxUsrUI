@@ -1,0 +1,203 @@
+MSH01001    //byxUsrUI
+    //Программа формирует окно приложения byxUsr.
+    Constant sysCstnt,sysWinCnst,sysNetCnst;
+    //считываем параметры системы
+    K %p[1];
+    //считываем файлы конфигурации
+    Do %p[1].%iniRead('byxPar.ini','byxData.ini','byxCfg.ini');
+    //Инициализация библиотеки Win
+    Do %winInit();
+    //-Главное окно приложения
+    Do %winNew(CwinTypeWinMain,mn);
+    //задать размеры окна
+    S $1=%p[1,width],$1.%v64(1)=%p[1,height];
+    S?$1<1 $1=800; S?$1.%v64(1)<1 $1.%v64(1)=900;
+    Set %winSetAtr(CwinTypeAtrSize,mn)=$1;
+    //установить обработчик инициализации приложения
+    Do %winSetAtr(CwinTypeAtrOnInit,mn,onInit,byxUsrUI);
+     //--контейнер размещения компонентов вертикальный
+     Do %winNew(CwinTypeWinBox,0bx,mn,CwinAtrPosV,CwinBoxStart,4);
+      //---контейнер размещения компонентов горизонтальный
+      Do %winNew(CwinTypeWinBox,00bx,0bx,CwinAtrPosH,CwinBoxStart,4);
+       //----картинка
+       Do %winNew(CwinTypeWinImg,000img,00bx,"MEDVED16.png");
+       //----метка отображает код организации
+       Do %winNew(CwinTypeWinLb,kodOrg,00bx,0);
+       //----метка отображает наименование организации
+       Do %winNew(CwinTypeWinLb,nameOrg,00bx,Primer);
+       //----метка отображает код рабочего места
+       Do %winNew(CwinTypeWinLb,kodRm,00bx,"00");
+       //----метка отображает наименование рабочего места
+       Do %winNew(CwinTypeWinLb,nameRm,00bx,Byxgalter);
+      //---Панель кнопок BoxB
+      Do %winNew(CwinTypeWinBoxBut,01bx,0bx,CwinAtrPosH,CwinBoxButEXPAND);
+       //----кнопка Dk
+       Do %winNew(CwinTypeWinBut,0dk,01bx,Doc,"mn_GL0.PNG",CwinPosRight);
+       //установить обработчик нажатия кнопки
+       Do %winSetAtr(CwinTypeAtrOn,0dk,onDk,byxUsrUI);
+       //----кнопка Wf
+       Do %winNew(CwinTypeWinBut,0wf,01bx,Wf,"mn_GL1.PNG",CwinPosRight);
+       //установить обработчик нажатия кнопки
+       Do %winSetAtr(CwinTypeAtrOn,0wf,onWf,byxUsrUI);
+       //----кнопка Kl
+       Do %winNew(CwinTypeWinBut,0kl,01bx,KL,"mn_GL2.PNG",CwinPosRight);
+       //установить обработчик нажатия кнопки
+       Do %winSetAtr(CwinTypeAtrOn,0kl,onKl,byxUsrUI);
+       //----кнопка Dt
+       Do %winNew(CwinTypeWinBut,0dt,01bx,Calendar);
+       //установить обработчик нажатия кнопки
+       Do %winSetAtr(CwinTypeAtrOn,0dt,onDt,byxUsrUI);
+       //----кнопка Pr
+       Do %winNew(CwinTypeWinBut,0pr,01bx,Prop,"mn_GL3.PNG",CwinPosRight);
+       //установить обработчик нажатия кнопки
+       Do %winSetAtr(CwinTypeAtrOn,0pr,onPr,byxUsrUI);
+      //---метка отображает ошибки выполнения
+      Do %winNew(CwinTypeWinLb,0err,0bx,"Err");
+      //---NoteBook
+      Do %winNew(CwinTypeWinNb,03nb,0bx,CwinPosTop,0);
+       //----страница Dk
+       //----Панель Box
+       Do %winNew(CwinTypeWinBox,030box,,CwinAtrPosV,CwinBoxStart,4);
+       //сформированую страницу добавляем в NoteBook
+       Do %winSetAtr(CwinAtrTabAdd,030box,03nb,Document);
+        //-----Панель кнопок BoxB
+        Do %winNew(CwinTypeWinBoxBut,0300boxB,030box,CwinAtrPosH,CwinBoxButSTART);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,dkSelList,0300boxB,Sel,"drImLs/DkLeft.bmp",CwinPosRight);
+         //установить обработчик нажатия кнопки
+         Do %winSetAtr(CwinTypeAtrOn,dkSelList,ondkSelList,byxUsrUI);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,dkVidio,0300boxB,Video,"drImLs/Vidio.bmp",CwinPosRight);
+         //установить обработчик нажатия кнопки
+         Do %winSetAtr(CwinTypeAtrOn,dkVidio,onVidio,byxUsrUI);
+        //-----Таблица видов документов
+        Do %winNew(CwinTypeWinTree,byxDk,030box,4);
+       //----страница Wf Отчеты
+       //----Панель Box
+       Do %winNew(CwinTypeWinBox,031box,,CwinAtrPosV,CwinBoxStart,4);
+       Do %winSetAtr(CwinAtrTabAdd,031box,03nb,Forms);
+        //-----Панель кнопок BoxB
+        Do %winNew(CwinTypeWinBoxBut,0310boxB,031box,CwinAtrPosH);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,2wfSel,0310boxB,,"drImLs/DkLeft.bmp",CwinPosRight);
+         //установить обработчик нажатия кнопки
+         Do %winSetAtr(CwinTypeAtrOn,2wfSel,onwfSel,byxUsrUI);
+        //-----Таблица выходных форм
+        Do %winNew(CwinTypeWinTree,byxWf,031box,2);
+       //----страница Kl классификаторы
+       //----Панель Box
+       Do %winNew(CwinTypeWinBox,032box,,CwinAtrPosV);
+       Do %winSetAtr(CwinAtrTabAdd,032box,03nb,Klass);
+        //-----Панель кнопок BoxB
+        Do %winNew(CwinTypeWinBoxBut,0320boxB,032box,CwinAtrPosH);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,3klSel,0320boxB,,"drImLs/DkLeft.bmp",CwinPosRight);
+         Do %winSetAtr(CwinTypeAtrOn,3klSel,onklSel,byxUsrUI);
+        //Таблица классификаторов
+        Do %winNew(CwinTypeWinGrid,byxKl,032box,2);
+       //----страница Calendar
+       Do %winNew(CwinTypeWinCalendar,Calendar);
+       Do %winSetAtr(CwinAtrTabAdd,Calendar,03nb);
+       Do %winSetAtr(CwinTypeAtrOn,Calendar,onDtSel,byxUsrUI);
+       //----Список документов
+       //----Панель Box
+       Do %winNew(CwinTypeWinBox,033box,,CwinAtrPosV);
+       //добавляем панель в NoteBook
+       Do %winSetAtr(CwinAtrTabAdd,033box,03nb);
+        //-----Панель кнопок BoxB
+        Do %winNew(CwinTypeWinBoxBut,0330boxB,033box,CwinAtrPosH);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,dkSel,0330boxB,Sel,"drImLs/DkL.bmp",CwinPosRight);
+         Do %winSetAtr(CwinTypeAtrOn,dkSel,ondkSelList,byxUsrUI);
+         //------Кнопка
+         Do %winNew(CwinTypeWinBut,dkNew,0330boxB,New,"drImLs/Dk0.bmp",CwinPosRight);
+         Do %winSetAtr(CwinTypeAtrOn,dkNew,ondkSelList,byxUsrUI);
+         //------Метка
+         Do %winNew(CwinTypeWinLb,typeDk,0330boxB);
+         //------Метка
+         Do %winNew(CwinTypeWinLb,nametypeDk,0330boxB);
+        //-----Список документов
+        Do %winNew(CwinTypeWinGrid,byxDkList,033box,5);
+    //все компоненты созданы
+    //загружаем заголовки компонентов
+    Do %winIniToAtr(CwinTypeAtrTitle,"byxHeder.ini","byxPar.ini","byxData.ini");
+    //загружаем данные компонентов
+    Do %winIniToAtr(CwinTypeAtrData,"byxMenu.ini");
+    //запускаем приложение главного окна mn
+    Do %winOpenChannel(%p[1,Srv]);
+    Do %winStart(mn);
+    Return;
+    //----------Обработчики событий-------------
+    //инициализация обмена
+onInit: //Отправить на сервер параметры клиента.
+    // Для обмена с сервером используется стандартный протокол, который будет описан отдельно.
+    // Vmn\nOr=%p[1,kodOrg]\tRm=%p[1,kodRm]\tLg=%p[1,kodLg]
+    //в буфер вывода помещается команда которая будет отправлена на сервер
+    //CnetcomValue-команда на сервере создать переменную us[] для объекта mn с параметрами Or, Rm, kodRm, Lg
+    Set B$1=CnetcomValue_mn_CsysfrRou_Or_CsysfrCom_%p[1,kodOrg]_CsysfrPole_Rm_CsysfrCom_%p[1,kodRm]_CsysfrPole_Lg_CsysfrCom_%p[1,kodLg];
+    //буфер вывода <B$> отправляется на сервер.
+    Write SR;
+    Return;
+    //Обработчик выбора страниц NoteBook, 0nb - имя компонента NoteBook 0,1,2 выбор соответствующих страниц.
+onDk:
+    Do %winSetAtr(CwinTypeAtrFocus,03nb,0);
+    Return;
+onWf:
+    Do %winSetAtr(CwinTypeAtrFocus,03nb,1);
+    Return;
+onKl:
+    Do %winSetAtr(CwinTypeAtrFocus,03nb,2);
+    Return;
+    //Обработчик выбора календаря.
+onDt:
+    //Чтение компонента 0dt значения атрибута
+    Set $1=%winGetAtr(CwinTypeAtrTitle,0dt);
+    //Запись в компоненту Calendar прочитанного значения
+    Do %winSetAtr(CwinTypeAtrData,Calendar,$1);
+    //Установка на компоненту Calendar фокуса
+    Do %winSetAtr(CwinTypeAtrFocus,03nb,3);
+    Return;
+    //Обработчик нажатия выбора даты.
+onDtSel:
+    //Очистка вспомогательной локали необходимой для формирования ini файла.
+    Kill [1];
+    Set $1=%winGetAtr(CwinTypeAtrData,Calendar),[1,0dt]=$1;
+    //Запись даты в компоненту 0dt
+    Do %winSetAtr(CwinTypeAtrTitle,0dt,$1);
+    //Запись даты в ini файл
+    Do [1].%iniWrite("byxData.ini");
+    Return;
+    //Обработчик выбора страницы параметры
+onPr:
+    Do %winSetAtr(CwinTypeAtrFocus,03nb,5);
+    Return;
+    //выбор списка документов
+ondkSelList:    //выбрать из формы текущую дату и выбранную строку
+    //В $3-читается Атрибут значение компоненты 0dt
+    Set $3=%winGetAtr(CwinTypeAtrData,0dt);
+    Set $1=%winGetAtr(CwinTypeAtrFocus,byxDk,0)
+    // $1-содержит вид документа
+    //если вид документа задан
+    If?($1.%size>1); //разнести полученные значения в поля формы
+     // $2 название вида документа
+     Set $2=%winGetAtr(CwinTypeAtrFocus,byxDk,1);
+     Do %winSetAtr(CwinTypeAtrData,typeDk,$1);
+     Do %winSetAtr(CwinTypeAtrData,nametypeDk,$2);
+     //на сервере задать параметры формы
+     Set B$1=CnetcomValue_dkL_CsysfrRou_Dt_CsysfrCom_$3_CsysfrPole_typeDk_CsysfrCom_$1;
+     Write SR;
+     //получить с сервера список документов заданного типа
+     Set B$1=CnetcomGet_dkL_CsysfrInd_byxSrvDkList;
+     Write SR;
+     //перейти на страницу списка документов
+     Do %winSetAtr(CwinTypeAtrFocus,03nb,4);
+     //Ответ сервера будет получен ассинхронно и обработан соответствующим обработчиком.
+     EndIf;
+    Return;
+onVidio:    //
+    Return;
+onwfSel:    //
+    Return;
+onklSel:    //
+    Return;
+    EndbyxUsrUI;

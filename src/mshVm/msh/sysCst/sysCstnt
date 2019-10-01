@@ -1,0 +1,6 @@
+MSH01001
+ Const CsysfrBK='\n',CsysfrPole='\t',CsysfrRou='\n',CsysQueryEnd=-1,CsysErrOk=0,CsysErrERR=-1000;
+ Const Csystp0='-',CsystpInt=i,CsystpDec=f,CsystpPointer=p,CsystpObj=o,CsystpStr=s,CsystpList=a;
+ Const CsysfrCom='=',CsysfrInd=',',CsysfrCol=':',CsysfrDate='.';
+ EndsysCstnt;
+

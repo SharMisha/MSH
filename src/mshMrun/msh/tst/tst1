@@ -1,0 +1,4 @@
+MSH01001	//tst1
+	Set %a[1]=2;
+Endtst1;
+

@@ -1,0 +1,110 @@
+
+Раздел Данных
+     0 Str: size=3 ^d1
+     1 Str: size=10 2017.02.01
+     2 AreaOut={parea=0x7ffe6016da58 off=0} 
+     3 AreaOut={parea=0x7ffe6016da58 off=27} 
+     4 AreaOut={parea=0x7ffe6016da58 off=54} 
+     5 Str: size=10 2017.03.02
+     6 AreaOut={parea=0x7ffe6016da58 off=81} 
+     7 AreaOut={parea=0x7ffe6016da58 off=108} 
+     8 Str: size=10 2017.05.04
+     9 AreaOut={parea=0x7ffe6016da58 off=135} 
+    10 AreaOut={parea=0x7ffe6016da58 off=162} 
+    11 Str: size=10 2017.05.10
+    12 AreaOut={parea=0x7ffe6016da58 off=189} 
+    13 Str: size=10 2017.05.20
+    14 AreaOut={parea=0x7ffe6016da58 off=216} 
+    15 Str: size=10 2017.06.20
+    16 AreaOut={parea=0x7ffe6016da58 off=243} 
+
+
+---Раздел Меток--# 0
+
+Раздел Команд
+     0            Marker  13      2
+     1             Registr  uIm     0
+     2             Kill  *
+     3            Marker  10      3
+     4             Registr  uIm     0
+     5             Registr  mIm     1
+     6             Registr  mIC  BP
+     7             Registr  mIc     1
+     8             Registr  uI      0
+     9             Set   m     2
+    10            Marker  10      4
+    11             Registr  uIm     0
+    12             Registr  mIm     1
+    13             Registr  mIC  BP
+    14             Registr  mIc    20
+    15             Registr  uI      0
+    16             Set   m     3
+    17            Marker  10      5
+    18             Registr  uIm     0
+    19             Registr  mIm     1
+    20             Registr  mIC  BP
+    21             Registr  mIc    32
+    22             Registr  uI      0
+    23             Set   m     4
+    24            Marker  10      6
+    25             Registr  uIm     0
+    26             Registr  mIm     5
+    27             Registr  mIC  BP
+    28             Registr  mIc    40
+    29             Registr  uI      0
+    30             Set   m     6
+    31            Marker  10      7
+    32             Registr  uIm     0
+    33             Registr  mIm     5
+    34             Registr  mIC  BP
+    35             Registr  mIc    50
+    36             Registr  uI      0
+    37             Set   m     7
+    38            Marker  10      8
+    39             Registr  uIm     0
+    40             Registr  mIm     8
+    41             Registr  mIC  BP
+    42             Registr  mIc     1
+    43             Registr  uI      0
+    44             Set   m     9
+    45            Marker  10      9
+    46             Registr  uIm     0
+    47             Registr  mIm     8
+    48             Registr  mIC  BP
+    49             Registr  mIc    20
+    50             Registr  uI      0
+    51             Set   m    10
+    52            Marker  10     10
+    53             Registr  uIm     0
+    54             Registr  mIm    11
+    55             Registr  mIC  BP
+    56             Registr  mIc    32
+    57             Registr  uI      0
+    58             Set   m    12
+    59            Marker  10     11
+    60             Registr  uIm     0
+    61             Registr  mIm    13
+    62             Registr  mIC  BP
+    63             Registr  mIc    40
+    64             Registr  uI      0
+    65             Set   m    14
+    66            Marker  10     12
+    67             Registr  uIm     0
+    68             Registr  mIm    15
+    69             Registr  mIC  BP
+    70             Registr  mIc    50
+    71             Registr  uI      0
+    72             Set   m    16
+
+
+Раздел Длинных строк
+size=51 Банк приход 1	1000    BC 2017.04.01 10:42
+size=52 Банк приход 20	2000    BC 2017.04.02 10:42
+size=52 Банк приход 32	3000    BC 2017.04.03 10:42
+size=52 Банк приход 40	4000    BC 2017.04.01 10:42
+size=52 Банк приход 50	5000    BC 2017.04.24 10:42
+size=51 Банк приход 1	6000    BC 2017.04.01 10:42
+size=52 Банк приход 20	7000    BC 2017.04.02 10:42
+size=52 Банк приход 32	8000    BC 2017.04.03 10:42
+size=52 Банк приход 40	9000    BC 2017.04.01 10:42
+size=52 Банк приход 50	5550    BC 2017.04.24 10:42

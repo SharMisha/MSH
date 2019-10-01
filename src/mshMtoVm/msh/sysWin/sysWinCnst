@@ -1,0 +1,19 @@
+MSH01001	//sysWinCnst
+ //Константы библиотеки Win
+ //типы Widget
+ Const CwinTypeWinMain=1,CwinTypeWinNb=2,CwinTypeWinLb=3,CwinTypeWinBut=4,CwinTypeWinBox=5,CwinTypeWinBoxBut=6,CwinTypeWinSc=7,CwinTypeWinGrid=8,CwinTypeWinTree=9;
+ Const CwinTypeWinListStore=10,CwinTypeWinTreeStore=11,CwinTypeWinImg=12,CwinTypeWinCalendar=13,CwinTypeWinTab=14;
+ //типы атрибутов
+ Const CwinTypeAtrName=1,CwinTypeAtrSize=2,CwinTypeAtrNbTabIs=3,CwinTypeAtrPos=4,CwinTypeAtrhScPol=5,CwinTypeAtrvScPol=6,CwinTypeAtrBoxStyle=7,CwinTypeAtrCell=8;
+ Const CwinTypeAtrSpacing=9,CwinTypeAtrNbScroll=10,CwinTypeAtrVisible=11,CwinTypeAtrImg=12,CwinTypeAtrModel=13,CwinTypeAtrInd=14,CwinTypeAtrTitle=15;
+ Const CwinTypeAtrData=16,CwinTypeAtrDataAdd=17,CwinTypeAtrFocus=18;
+ //обработчики событий
+ Const CwinTypeAtrOn=19;
+ //значения атрибутов
+ Const CwinAtrPosH=0,CwinAtrPosV=1;
+ Const CwinBoxStyleStart=0,CwinBoxStyleEnd=1,CwinBoxStyleCntr=2;
+ //расположение надписи относительно картинки
+ Const CwinPosLeft=0,CwinPosRight=1,CwinPosTop=2,CwinPosBottom=3;
+
+
+ EndsysWinCnst;
